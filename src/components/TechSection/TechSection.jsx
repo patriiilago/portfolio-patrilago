@@ -4,9 +4,7 @@ const TechSection = () => {
 
 return (
     <>
-    <h1>Tech Stack</h1>
-
-    
+    <h1>TechSection</h1>
     </>
 )
 

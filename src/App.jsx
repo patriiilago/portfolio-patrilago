@@ -16,7 +16,7 @@ function App() {
       <div className="portfolio-container">
         <Navbar />
 
-        <main>
+        <main className="portfolio-main">
 
           <section id="home">
             <HomeSection />

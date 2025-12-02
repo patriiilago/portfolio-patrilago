@@ -4,7 +4,7 @@ import './ProjectCard.css';
 
 const ProjectCard = ({ project }) => {
    
-    const { image, link, title, description} = project; 
+    const { image, link, title, description} = project 
     
     return (
         <article className="project-card">

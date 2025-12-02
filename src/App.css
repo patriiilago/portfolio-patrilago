@@ -10,6 +10,12 @@
     /* Nuevo: Alineación de columna */
 }
 
+.portfolio-main{
+    display: flex;
+    flex-direction: column;
+    gap:75px;
+}
+
 #home {
     /* La sección que envuelve al HomeSection */
     /* 1. Aplicamos la imagen de fondo solo a esta sección */
