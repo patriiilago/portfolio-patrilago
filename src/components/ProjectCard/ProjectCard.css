@@ -1,0 +1,71 @@
+:root {
+    --color-text-faded: #cccccc;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.card-image-container {
+    width: 90%;
+    overflow: hidden;
+    display: block;
+    border-radius: 20px;
+}
+
+
+.btn-live {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1; 
+    color: var(--color-text-light);
+}
+
+.card-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg,
+            var(--icon-color) 0%,
+            var(--accent-color-primary) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description {
+    margin-bottom: 0; 
+    color: var(--color-text-faded);
+    font-size: 0.95rem;
+    line-height: 1.4;
+}

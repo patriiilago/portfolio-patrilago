@@ -1,0 +1,16 @@
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto; 
+}
+
+/* Ajustes para pantallas pequeñas (Móviles) */
+@media (max-width: 768px) {
+    .projects-list {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+}

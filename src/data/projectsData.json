@@ -1,0 +1,22 @@
+[
+
+        {
+            "image": "/images/miauyuda.png",
+            "link": "https://miauyuda.netlify.app/",
+            "title": "Miauyuda",
+            "description":"miauyuda.description"
+        },
+      
+        {
+            "image": "/images/ingeina.png",
+            "link": "https://ripcamp-project.netlify.app",
+            "title": "Ingeina",
+            "description": "ingeina.description"
+        },
+          {
+            "image": "/images/bricksbreaker.png",
+            "link": "https://bricks-breaker-pcgame.netlify.app",
+            "title": "Bricks Breaker",
+            "description": "bricksBreaker.description"
+        }
+    ]

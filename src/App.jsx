@@ -1,7 +1,12 @@
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import HomeSection from './components/HomeSection/HomeSection'
-
+import ExperienceSection from './components/ExperienceSection/ExperienceSection'
+import TechSection from './components/TechSection/TechSection'
+import ProjectsSection from './components/ProjectsSection/ProjectsSection'
+import AboutSection from './components/AboutSection/AboutSection'
+import ContactSection from './components/ContactSection/ContactSection'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -17,10 +22,11 @@ function App() {
             <HomeSection />
           </section>
 
-          {/* <section id="experience">
+          <section id="experience">
             <ExperienceSection />
           </section>
-
+          
+          
           <section id="tech">
             <TechSection />
           </section>
@@ -35,11 +41,11 @@ function App() {
 
           <section id="contact">
             <ContactSection />
-          </section> */}
+          </section> 
 
         </main>
 
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   )

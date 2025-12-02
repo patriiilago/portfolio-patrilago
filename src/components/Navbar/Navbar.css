@@ -1,6 +1,6 @@
 /* Variables para facilitar la edición */
 :root {
-    --navbar-bg: rgba(0, 0, 0, 0.562);
+    --navbar-bg: rgba(0, 0, 0, 0.459);
     --nav-color-icon: #00EEFF;
     --nav-color-text: #ffffff;
     --border-radius: 8px;
@@ -52,7 +52,7 @@
     padding: 12px 15px;
     font-size: 16px;
     font-weight: bold;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
     border-radius: var(--border-radius);
 }
 
