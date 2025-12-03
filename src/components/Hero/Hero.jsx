@@ -1,6 +1,6 @@
-import './HomeSection.css'
+import './Hero.css'
 
-const HomeSection = () => {
+const Hero = () => {
 
     return (
 
@@ -40,4 +40,4 @@ const HomeSection = () => {
     )
 
 }
-export default HomeSection
+export default Hero

@@ -1,11 +1,11 @@
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
-import HomeSection from './components/HomeSection/HomeSection'
-import ExperienceSection from './components/ExperienceSection/ExperienceSection'
-import TechSection from './components/TechSection/TechSection'
-import ProjectsSection from './components/ProjectsSection/ProjectsSection'
-import AboutSection from './components/AboutSection/AboutSection'
-import ContactSection from './components/ContactSection/ContactSection'
+import Hero from './components/Hero/Hero'
+import Experience from './components/Experience/Experience'
+import Tech from './components/Tech/Tech'
+import Projects from './components/Projects/Projects'
+import About from './components/About/About'
+import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 
 function App() {
@@ -16,34 +16,35 @@ function App() {
       <div className="portfolio-container">
         <Navbar />
 
+
         <main className="portfolio-main">
 
           <section id="home">
-            <HomeSection />
+            <Hero />
           </section>
 
           <section id="experience">
-            <ExperienceSection />
+            <Experience />
           </section>
           
-          
           <section id="tech">
-            <TechSection />
+            <Tech />
           </section>
 
           <section id="projects">
-            <ProjectsSection />
+            <Projects />
           </section>
 
           <section id="about">
-            <AboutSection />
+            <About />
           </section>
 
           <section id="contact">
-            <ContactSection />
+            <Contact />
           </section> 
 
         </main>
+
 
         <Footer />
       </div>

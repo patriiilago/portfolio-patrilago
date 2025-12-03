@@ -1,14 +1,11 @@
 :root {
-    --text-color: #ffffff;
+    --text-color: #ecf0f1;
     --icon-color: #00FFFF;
     --accent-color-primary: #e45c5c;
-  
     --button-bg-color: #00FFFF;
-
 }
 
 .home-content {
-    /* Centra el contenido de esta sección */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +13,6 @@
 
 .name-title {
     font-size: 6rem;
-    /* Ajusta el tamaño según sea necesario */
     margin-bottom: 0.2rem;
 
     /* 1. Efecto de gradiente de color (similar al de la imagen) */
@@ -33,13 +29,12 @@
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 2rem;
+
     background: linear-gradient(90deg,
             var(--icon-color) 0%,
             var(--accent-color-primary) 60%);
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 /*TODO:REVISAR TAMAÑO DE LOS ICONOS */

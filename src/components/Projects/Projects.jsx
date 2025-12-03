@@ -1,8 +1,8 @@
-import './ProjectsSection.css'
+import './Projects.css'
 import projectsData from '../../data/projectsData.json'
 import ProjectCard from '../ProjectCard/ProjectCard'
 
-const ProjectsSection = () => {
+const Projects = () => {
 
 
     return (
@@ -20,4 +20,4 @@ const ProjectsSection = () => {
     )
 
 }
-export default ProjectsSection
+export default Projects

@@ -1,5 +1,5 @@
 :root {
-    --color-text-faded: #cccccc;
+    --color-text-faded: #ecf0f1;
 }
 
 .project-card {
@@ -58,7 +58,7 @@
     text-transform: uppercase;
     background: linear-gradient(90deg,
             var(--icon-color) 0%,
-            var(--accent-color-primary) 60%);
+            var(--accent-color-primary) 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

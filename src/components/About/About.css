@@ -1,0 +1,108 @@
+:root {
+    --icon-color: #00FFFF;
+    --accent-color-primary: #e45c5c;
+    --text-color: #ecf0f1;
+}
+
+.about-me-section {
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+
+    color: var(--text-color);
+
+    position: relative; 
+    display: inline-block;
+}
+
+.section-title::after {
+    /* ... (Estilos de la línea) ... */
+    content: ''; 
+    position: absolute;
+    left: 10%;
+    bottom: -5px; 
+    width: 20%; 
+    height: 4px; 
+    background-color: var(--accent-color-primary); 
+    transform: translateX(-50%); 
+}
+
+
+
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Estilos de la imagen */
+.about-me-image-wrapper {
+    flex-shrink: 0;
+    width: 300px;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #e45c5c;
+}
+
+/*TODO:COLO BORDE DE FOTO #c956566e */
+
+/* Estilos del contenido de texto */
+.about-me-text-content {
+    flex-grow: 1;
+    /* Permite que el texto ocupe el espacio restante */
+    max-width: 400px;
+}
+
+.about-me-text-content p {
+    font-size: 1.15rem;
+    /* Tamaño de fuente legible */
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.highlight-color {
+    color: var(--accent-color-primary);
+}
+
+
+
+/* 📱 Responsive Design para móviles y tabletas */
+@media (max-width: 768px) {
+    .about-me-container {
+        flex-direction: column;
+        /* Cambia a columna en pantallas pequeñas */
+        text-align: center;
+        /* Centra el contenido */
+        padding: 40px 20px;
+    }
+
+    .about-me-image-wrapper {
+        width: 200px;
+        /* Reduce el tamaño de la imagen en móvil */
+        margin-bottom: 25px;
+    }
+
+    .about-me-text-content {
+        max-width: 100%;
+        /* El texto ocupa todo el ancho */
+    }
+
+    .about-me-text-content p {
+        font-size: 1rem;
+    }
+}

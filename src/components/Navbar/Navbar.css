@@ -2,8 +2,9 @@
 :root {
     --navbar-bg: rgba(0, 0, 0, 0.459);
     --nav-color-icon: #00EEFF;
-    --nav-color-text: #ffffff;
+    --nav-color-text: #ecf0f1;
     --border-radius: 8px;
+    --text-color-hover: #00EEFF;
 }
 
 /* Contenedor principal de la barra de navegación */
@@ -60,23 +61,23 @@
 .nav-icon {
     margin-right: 5px;
     font-size: 1.2em;
-    color: var(--nav-color-icon); 
-  transition: color 0.3s ease;
+    color: var(--nav-color-icon);
+    transition: color 0.3s ease;
 }
 
 /* Efecto al pasar el mouse (hover) */
-.nav-link:hover{
-    transform: translateY(-5px); 
+.nav-link:hover {
+    color: var(--nav-color-icon);
 }
 
 /* Media query para dispositivos más pequeños */
 @media (max-width: 768px) {
     .navbar-list {
         /* Si quieres apilar los elementos en móvil, descomenta esto: */
-       flex-direction: column;
+        flex-direction: column;
         padding: 10px;
         border-radius: 0;
-         width: 100%; 
+        width: 100%;
     }
 
     .nav-item {

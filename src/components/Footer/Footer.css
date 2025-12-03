@@ -1,0 +1,120 @@
+:root {
+    --button-bg-color: #00FFFF;
+    --accent-color: #c9565642;
+    --text-color: #ecf0f1;
+    --text-color-copyright: #bdc3c7;
+    --icon-color: #00FFFF;
+    --accent-color-primary: #e45c5c;
+    --accent-color-light: #c956566e;
+    --text-color-role:#71AFAF;
+}
+
+
+footer {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 40px 20px 20px;
+    border-top: 5px solid var(--accent-color-light);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+    max-width: 300px;
+}
+
+.footer-info h1 {
+    background: linear-gradient(90deg,
+            var(--icon-color),
+            var(--accent-color-primary)40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 5px;
+}
+
+.role {
+    font-size: 0.9em;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color:var(--text-color-role);
+}
+
+.about-me {
+    font-size: 0.9em;
+}
+
+
+/* Estilos de la lista de navegación*/
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+/* Estilos de enlaces (navegación y sociales) */
+footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--accent-color-light);
+}
+
+/* Estilos de enlaces sociales */
+.social-links {
+    display: flex;
+    gap: 25px;
+}
+
+/* Estilos de la parte inferior (copyright) */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid var(--accent-color-light);
+    font-size: 0.85em;
+    color: var(--text-color-copyright);
+}
+
+
+/* Media Query para responsividad (en móviles, las secciones se apilan) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-info {
+        max-width: 400px;
+    }
+
+    .footer-info h1 {
+    background: linear-gradient(90deg,
+            var(--icon-color),
+            var(--accent-color-primary)70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 5px;
+}
+
+    .social-links,
+    .nav-links ul {
+        justify-content: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}

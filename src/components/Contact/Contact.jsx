@@ -1,10 +1,10 @@
-import './ContactSection.css'
+import './Contact.css'
 
-const ContactSection = () => {
+const Contact = () => {
 
     return (
-        <>
-            <h1 className="contact-title">Contact me</h1>
+        <section className="contact-section-container">
+            <h1 className="contact-title">Contacto</h1>
 
             <form 
             className="contact-form" 
@@ -54,8 +54,8 @@ const ContactSection = () => {
                 </button>
 
             </form>
-        </>
+        </section>
     )
 
 }
-export default ContactSection
+export default Contact
