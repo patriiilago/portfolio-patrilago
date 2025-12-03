@@ -8,10 +8,10 @@ const Hero = () => {
             <h1 className="name-title">Patri Lago</h1>
             <h2 className="role-title">Software Developer</h2>
 
-            <div className="social-links">
+            <div className="home-social">
                 <a
                     href="https://github.com/patriiilago"
-                    className="social-icon-link"
+                    className="home-social-icon"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -20,7 +20,7 @@ const Hero = () => {
 
                 <a
                     href="https://www.linkedin.com/in/patri-lago/"
-                    className="social-icon-link"
+                    className="home-social-icon"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

@@ -1,10 +1,38 @@
+.projects-container {
+    max-width: 1100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-title-projects {
+    font-size: 2.5rem;
+    color: var(--text-color);
+
+    position: relative;
+    display: inline-block;
+}
+
+/* ... (Estilos de la línea) ... */
+.section-title-projects::after {
+    content: ''; 
+    position: absolute;
+    left: 10%;
+    bottom: -5px;
+    
+    width: 20%; 
+    height: 4px; 
+    
+    background-color: var(--accent-color-primary); 
+    
+    transform: translateX(-50%); 
+}
+
 .projects-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    width: 90%;
-    max-width: 1100px;
-    margin: 40px auto; 
+
+    margin: 40px auto;
 }
 
 /* Ajustes para pantallas pequeñas (Móviles) */

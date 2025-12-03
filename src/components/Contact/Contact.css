@@ -21,6 +21,7 @@
     display: inline-block;
 }
 
+/* ... (Estilos de la línea) ... */
 .contact-title::after {
     content: ''; 
     position: absolute;

@@ -6,17 +6,14 @@ const Projects = () => {
 
 
     return (
-        <>
-            <h1>Projects</h1>
-            <section className="projects-list">
+        <section className="projects-container">
+            <h1 className='section-title-projects'>Projects</h1>
+            <div className="projects-list">
                 {projectsData.map((project)=>(
-                    <ProjectCard
-                    key={project.link}
-                    project= {project}
-                    />
+                    <ProjectCard key={project.link} project= {project} />
                 ))}
-            </section>
-        </>
+            </div>
+        </section>
     )
 
 }

@@ -30,7 +30,7 @@ margin-bottom: 100px
     position: relative;
     z-index: 1;
 
-    height: 90vh;
+    height: 57rem;
 
     display: flex;
     flex-direction: column;
@@ -57,9 +57,5 @@ section h1 {
     text-align: center;
     font-size: 2.5rem;
     color:var(--text-color);
-}
-
-/*TODO: revisar este alto*/
-#experience {
-    height: 100vh;
+    padding-top: 6rem;
 }

@@ -9,19 +9,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+    
+    max-width: 800px;
+    text-align: center; 
+    margin: 0 auto; 
 }
 
 .name-title {
     font-size: 6rem;
     margin-bottom: 0.2rem;
 
-    /* 1. Efecto de gradiente de color (similar al de la imagen) */
+    /* Gradiente de color */
     background: linear-gradient(90deg,
             var(--icon-color),
             var(--accent-color-primary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* color: var(--icon-color); Fallback */
+
+    /* Animación de entrada */
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 3s ease-out 0.3s forwards; 
 }
 
 .role-title {
@@ -30,27 +39,47 @@
     margin-top: 0;
     margin-bottom: 2rem;
 
+    /* Gradiente de color */
     background: linear-gradient(90deg,
             var(--icon-color) 0%,
             var(--accent-color-primary) 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 2s ease-out 0.6s forwards;
+}
+
+/* Keyframes de la animación */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 /*TODO:REVISAR TAMAÑO DE LOS ICONOS */
 
-.social-links {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2.5rem; 
+.home-social {
+    margin-bottom: 2.5rem;
 }
 
-.social-icon-link {
+.home-social-icon {
+    display: inline-block;
 transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 
-.social-icon-link:hover {
+.home-social-icon:hover {
     transform: translateY(-5px);
+}
+
+.home-social-icon img{
+    width: 60px;
 }
 
 
