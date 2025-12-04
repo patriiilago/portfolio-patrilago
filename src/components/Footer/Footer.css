@@ -6,7 +6,7 @@
     --icon-color: #00FFFF;
     --accent-color-primary: #e45c5c;
     --accent-color-light: #c956566e;
-    --text-color-role:#71AFAF;
+    --text-color-role: #71AFAF;
 }
 
 
@@ -44,7 +44,7 @@ footer {
     font-style: italic;
     margin-top: 0;
     margin-bottom: 15px;
-    color:var(--text-color-role);
+    color: var(--text-color-role);
 }
 
 .about-me {
@@ -100,14 +100,14 @@ footer a:hover {
     }
 
     .footer-info h1 {
-    background: linear-gradient(90deg,
-            var(--icon-color),
-            var(--accent-color-primary)70%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+        background: linear-gradient(90deg,
+                var(--icon-color),
+                var(--accent-color-primary)70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
-    margin-bottom: 5px;
-}
+        margin-bottom: 5px;
+    }
 
     .social-links,
     .nav-links ul {
@@ -116,5 +116,12 @@ footer a:hover {
 
     .footer-section {
         margin-bottom: 20px;
+    }
+}
+
+/* Estilos para tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-container {
+        max-width: 700px;
     }
 }

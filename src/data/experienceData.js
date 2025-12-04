@@ -6,8 +6,8 @@ export const experiences = [
     location: "Santiago de Compostela, España",
     tasks: [
       "Apertura y cierre del local de forma autónoma.",
-      "Gestión de caja y realización de cierres diarios.",
-      "Gestión de pedidos y control de facturas."
+      "Manejo de caja y realización de cierres diarios.",
+      "Gestión de pedidos, trato con comerciales y control de facturas."
     ]
   },
   {
@@ -16,9 +16,9 @@ export const experiences = [
     period: "sept. 2024 - jun. 2025",
     location: "Sliema, Malta",
     tasks: [
-      "Atención a clientes en inglés, español y gallego.",
-      "Coordinación del equipo y supervisión de la barra.",
-      "Cierre del local en ausencia de los dueños."
+      "Supervisión de equipo, asegurando el correcto desarrollo de la operativa diaria.",
+      "Resolución de incidencias y gestión eficiente de recursos.",
+      "Coordinación de equipo y organización de recursos y tareas."
     ]
   },
   {

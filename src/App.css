@@ -7,23 +7,21 @@
     display: flex;
     flex-direction: column;
 
-    color:var(--text-color);
+    color: var(--text-color);
 }
 
-.portfolio-main{
+.portfolio-main {
     display: flex;
     flex-direction: column;
-    gap:75px
+    gap: 4.5rem;
 }
 
-#contact{
-margin-bottom: 100px
+#contact {
+    margin-bottom: 6.25rem;
 }
 
 #home {
-    /* La sección que envuelve al HomeSection */
-    /* 1. Aplicamos la imagen de fondo solo a esta sección */
-    background-image: url('imagen4-1.jpeg');
+    background-image: url('imagen-fondo.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -34,11 +32,8 @@ margin-bottom: 100px
 
     display: flex;
     flex-direction: column;
-    /* Nuevo: Alineación de columna */
     justify-content: center;
-    /* Centra verticalmente */
     align-items: center;
-    /* Centra horizontalmente */
 }
 
 /* 2. Creamos el overlay oscuro solo para HomeSection (para que el texto resalte) */
@@ -56,6 +51,19 @@ margin-bottom: 100px
 section h1 {
     text-align: center;
     font-size: 2.5rem;
-    color:var(--text-color);
+    color: var(--text-color);
     padding-top: 6rem;
+}
+
+@media (max-width: 768px) {
+    #home {
+        height: auto;
+        /* ajusta la altura automáticamente */
+        min-height: 70vh;
+        /* asegura que tenga suficiente altura */
+        background-attachment: scroll;
+        /* fixed no funciona bien en móvil */
+        padding: 2rem 1rem;
+        /* un poco de espacio interno */
+    }
 }

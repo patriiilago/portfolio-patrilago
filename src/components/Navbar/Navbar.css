@@ -51,9 +51,10 @@
     -webkit-text-fill-color: transparent;
 }
 
-.navbar-subtitle{
+.navbar-subtitle {
     color: var(--nav-color-text);
 }
+
 
 /* Lista que contiene los elementos */
 .navbar-list {
@@ -91,7 +92,7 @@
 @media (max-width: 768px) {
     .navbar-list {
         /* Si quieres apilar los elementos en móvil, descomenta esto: */
-        flex-direction: column;
+        /* flex-direction: column; */
         padding: 10px;
         border-radius: 0;
         width: 100%;
@@ -100,4 +101,6 @@
     .nav-item {
         margin: 5px 0;
     }
+
+    
 }

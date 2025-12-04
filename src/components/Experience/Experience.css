@@ -56,3 +56,11 @@
     margin-bottom: 0.4rem;
     color: var(--text-color);
 }
+
+
+/* Estilos para móviles */
+@media (max-width: 767px) {
+    .experience-section {
+        max-width: 360px;
+    }
+}

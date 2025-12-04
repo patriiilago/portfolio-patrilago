@@ -10,10 +10,10 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    
+
     max-width: 800px;
-    text-align: center; 
-    margin: 0 auto; 
+    text-align: center;
+    margin: 0 auto;
 }
 
 .name-title {
@@ -26,11 +26,6 @@
             var(--accent-color-primary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    /* Animación de entrada */
-    opacity: 0;
-    transform: translateX(-100px);
-    animation: slideIn 3s ease-out 0.3s forwards; 
 }
 
 .role-title {
@@ -46,20 +41,30 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    opacity: 0;
-    transform: translateX(-100px);
-    animation: slideIn 2s ease-out 0.6s forwards;
+    width: fit-content;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    white-space: nowrap;
+
+    /* Ejecuta typing y luego oculta el cursor */
+    animation: typing 3s steps(20) forwards, hideCursor 0s 3s forwards;
 }
 
-/* Keyframes de la animación */
-@keyframes slideIn {
+/* Animación de escritura */
+@keyframes typing {
     from {
-        opacity: 0;
-        transform: translateX(-100px);
+        width: 0;
     }
+
     to {
-        opacity: 1;
-        transform: translateX(0);
+        width: 375px;
+    }
+}
+
+/* Oculta el cursor al final */
+@keyframes hideCursor {
+    to {
+        border-right-color: transparent;
     }
 }
 
@@ -71,15 +76,16 @@
 
 .home-social-icon {
     display: inline-block;
-transition: transform 0.5s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 
 .home-social-icon:hover {
     transform: translateY(-5px);
 }
 
-.home-social-icon img{
-    width: 60px;
+.home-social-icon img {
+    width: 3.5rem;
+    height: auto;
 }
 
 
@@ -88,7 +94,7 @@ transition: transform 0.5s ease, box-shadow 0.3s ease;
     color: black;
     text-decoration: none;
     border: none;
-    padding: 15px 30px;
+    padding: 1rem 1.5rem;
     border-radius: 5px;
     font-size: 1.1rem;
     font-weight: bold;
@@ -99,4 +105,19 @@ transition: transform 0.5s ease, box-shadow 0.3s ease;
 
 .cv-button:hover {
     transform: translateY(-2px);
+}
+
+/* Estilos para móviles */
+@media (max-width: 767px) {
+
+    .home-content {
+        max-width: 360px;
+    }
+    .name-title {
+        font-size: 2.5rem;
+    text-align: center; 
+    }
+    .role-title {
+        font-size: 2rem;
+    }    
 }

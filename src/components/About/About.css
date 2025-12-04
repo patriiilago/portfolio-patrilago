@@ -6,7 +6,7 @@
 
 .about-me-section {
     max-width: 800px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 
@@ -16,23 +16,23 @@
 
     color: var(--text-color);
 
-    position: relative; 
+    position: relative;
     display: inline-block;
 }
 
 /* ... (Estilos de la línea) ... */
 .section-title::after {
-    content: ''; 
+    content: '';
     position: absolute;
     left: 10%;
-    bottom: -5px; 
+    bottom: -5px;
 
-    width: 20%; 
-    height: 4px; 
+    width: 20%;
+    height: 4px;
 
-    background-color: var(--accent-color-primary); 
-    
-    transform: translateX(-50%); 
+    background-color: var(--accent-color-primary);
+
+    transform: translateX(-50%);
 }
 
 
@@ -84,8 +84,12 @@
 
 
 
-/* 📱 Responsive Design para móviles y tabletas */
-@media (max-width: 768px) {
+/* Estilos para móviles */
+@media (max-width: 767px) {
+    .about-me-section {
+        max-width: 360px;
+    }
+
     .about-me-container {
         flex-direction: column;
         /* Cambia a columna en pantallas pequeñas */
@@ -108,4 +112,13 @@
     .about-me-text-content p {
         font-size: 1rem;
     }
+}
+
+
+/* Estilos para tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .about-me-section {
+        max-width: 700px;
+    }
+
 }

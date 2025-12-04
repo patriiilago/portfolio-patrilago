@@ -5,13 +5,13 @@ const About = () => {
     return (
         <section id="about-me" className="about-me-section">
 
-            <h2 className="section-title">Sobre mí</h2>
+            <h1 className="section-title">Sobre mí</h1>
 
             <div className="about-me-container">
 
                 <div className="about-me-image-wrapper">
                     <img
-                        src="src\assets\patri-foto.jpg"
+                        src="src/assets/foto-perfil/patri-foto.jpg"
                         alt="Foto de perfil de la desarrolladora"
                         className="profile-photo"
                     />
