@@ -61,6 +61,14 @@
 /* Estilos para móviles */
 @media (max-width: 767px) {
     .experience-section {
-        max-width: 360px;
+        max-width: 230px;
+    }
+
+    .section-title {
+        margin-bottom: 4rem;
+    }
+
+    .experience-list {
+        gap: 3rem;
     }
 }

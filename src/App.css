@@ -21,14 +21,14 @@
 }
 
 #home {
-    background-image: url('imagen-fondo.jpeg');
+    background-image: url("src/assets/fondo/imagen-fondo.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
     z-index: 1;
 
-    height: 57rem;
+    height: 58rem;
 
     display: flex;
     flex-direction: column;
@@ -56,14 +56,19 @@ section h1 {
 }
 
 @media (max-width: 768px) {
+
     #home {
-        height: auto;
-        /* ajusta la altura automáticamente */
-        min-height: 70vh;
-        /* asegura que tenga suficiente altura */
+        height: 10rem;
+         min-height: 90vh;
         background-attachment: scroll;
-        /* fixed no funciona bien en móvil */
         padding: 2rem 1rem;
-        /* un poco de espacio interno */
+    }
+
+    .portfolio-main {
+        gap: 2.5rem;
+    }
+
+    #contact {
+        margin-bottom: 10rem;
     }
 }

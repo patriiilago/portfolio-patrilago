@@ -1,11 +1,13 @@
 /* Variables para facilitar la edición */
 :root {
     --navbar-bg: rgba(51, 50, 50, 0.349);
-    --navbar-bg2: rgba(0, 0, 0, 0.459);
+    --navbar-bg2: rgba(0, 0, 0, 0.8);
     --nav-color-icon: #00EEFF;
     --nav-color-text: #ecf0f1;
-    --border-radius: 20px;
+    --border-radius: 10px;
     --text-color-hover: #00EEFF;
+    --icon-color: #00EEFF;
+    --accent-color-primary: #00EEFF;
 }
 
 /* Contenedor principal de la barra de navegación */
@@ -13,9 +15,8 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 35px;
     position: fixed;
-    /* Para que se mantenga visible al hacer scroll */
     top: 0;
     left: 0;
     z-index: 1000;
@@ -24,26 +25,27 @@
 .navbar-wrap {
     display: flex;
     align-items: center;
-    gap: 30px;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: auto;
+    gap: 20px;
 
     /* Estilo del "contenedor" flotante oscuro */
     background: var(--navbar-bg);
     border-radius: var(--border-radius);
-    /* Sombra sutil opcional */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    /* Efecto de desenfoque de fondo opcional (requiere buena compatibilidad) */
     backdrop-filter: blur(5px);
-
 }
 
 .navbar-brand {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .navbar-title {
     margin-left: 10px;
+    margin: 16px;
     background: linear-gradient(90deg,
             var(--icon-color),
             var(--accent-color-primary));
@@ -53,24 +55,18 @@
 
 .navbar-subtitle {
     color: var(--nav-color-text);
+    margin: 5px;
 }
 
+/* --- Estilos de Desktop/Tablet (por defecto) --- */
 
-/* Lista que contiene los elementos */
 .navbar-list {
     display: flex;
     list-style: none;
-    /* Elimina los puntos de la lista */
     padding: 0;
     margin: 0;
 }
 
-/* Elemento individual de la lista */
-.nav-item {
-    /* margin: 0 10px; */
-}
-
-/* Enlace (incluye ícono y texto) */
 .nav-link {
     display: flex;
     align-items: center;
@@ -83,24 +79,127 @@
     border-radius: var(--border-radius);
 }
 
-/* Efecto al pasar el mouse (hover) */
 .nav-link:hover {
     color: var(--nav-color-icon);
 }
 
-/* Media query para dispositivos más pequeños */
+
+/* --- Estilos del Botón de Menú (Hamburguesa) --- */
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--nav-color-text);
+    margin: 5px 0;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+
+
+/* --- Media query para dispositivos más pequeños (Móvil) --- */
 @media (max-width: 768px) {
+
+    /* ********************************************************** */
+    /* CAMBIOS PARA HACER EL NAVBAR COMPACTO Y ALINEADO A LA IZQUIERDA */
+    /* ********************************************************** */
+
+    /* 1. Cambia la posición del contenedor principal (navbar-container) */
+    .navbar-container {
+        /* Deshace el 'justify-content: center' de la versión de escritorio */
+        justify-content: flex-start;
+        /* Añade un margen izquierdo para que no pegue al borde */
+        padding-left: 15px;
+        /* Elimina el padding-top para que el margen sea uniforme */
+        padding-top: 15px;
+        width: auto;
+        /* Permite que el contenedor se ajuste */
+    }
+
+    /* 2. El wrap ahora debe ocupar solo el espacio necesario para el icono */
+    .navbar-wrap {
+        /* El width: auto hace que solo ocupe el espacio del contenido */
+        width: auto;
+        /* Como ya no hay título ni subtítulo, solo queda el toggle */
+        gap: 0;
+        /* Reducimos el padding horizontal para que sea más compacto */
+        padding: 8px 12px;
+        /* Aseguramos que solo haya un elemento (el toggle) visible */
+        justify-content: flex-start;
+    }
+
+    /* Ocultar los títulos en móvil (mantenemos esto) */
+    .navbar-title,
+    .navbar-subtitle {
+        display: none;
+    }
+
+    .navbar-wrap {
+        border-radius: 50%;
+    }
+
+    /* 3. Muestra el botón de menú */
+    .menu-toggle {
+        display: block;
+        padding: 0;
+        /* Quitamos el padding extra para que el wrap sea más pequeño */
+    }
+
+    /* Ocultamos el div brand (aunque esté vacío) para que no ocupe espacio innecesario */
+    .navbar-brand {
+        display: none;
+    }
+
+
+    /* ********************************************************** */
+    /* ESTILOS PARA LA LISTA DESPLEGABLE (MENÚ) */
+    /* ********************************************************** */
+
     .navbar-list {
-        /* Si quieres apilar los elementos en móvil, descomenta esto: */
-        /* flex-direction: column; */
-        padding: 10px;
-        border-radius: 0;
-        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        /* Alinea el menú desplegable debajo del ícono/wrap */
+        top: 100%;
+        left: 0;
+        /* El menú debe seguir ocupando todo el ancho de la pantalla para una mejor experiencia */
+        right: 0;
+        width: 100vw;
+        /* Ocupa el 100% del viewport width */
+
+        background: var(--navbar-bg2);
+        /* Ajustamos el border radius para que parezca que "cae" del wrap pequeño */
+        border-radius: var(--border-radius);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+
+        /* Centramos los enlaces dentro del menú que ocupa todo el ancho */
+        align-items: center;
     }
 
-    .nav-item {
-        margin: 5px 0;
+    /* Clase para mostrar la lista cuando se presiona el botón */
+    .navbar-list.open {
+        max-height: 600px;
+        padding: 20px 0;
     }
 
-    
+    /* Ajustes en los enlaces dentro del menú móvil */
+    .nav-link {
+        font-size: 1.3rem;
+        font-weight: normal;
+        padding: 25px 20px;
+        width: 90%;
+        /* Hace que los enlaces se vean mejor centrados */
+        border-radius: var(--border-radius);
+        /* Mantén el borde redondeado */
+        /* Eliminamos el background hover de móvil para que el link parezca un botón */
+    }
 }

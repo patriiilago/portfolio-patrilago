@@ -6,17 +6,19 @@
             "title": "Miauyuda",
             "description":"Plataforma que une a veterinarios y dueños de mascotas. Ofrece dos tipos de usuario, consultas inmediatas con IA y localización de profesionales mediante mapas."
         },
+
+          {
+            "image": "src/assets/images/proyectos/bricksbreaker.png",
+            "link": "https://bricks-breaker-pcgame.netlify.app",
+            "title": "Bricks Breaker",
+            "description": "Proyecto inspirado en el clásico Bricks Breaker, desarrollado desde cero utilizando HTML, CSS y JavaScript."
+        },
       
         {
             "image": "src/assets/images/proyectos/ripcamp.png",
             "link": "https://ripcamp.netlify.app/",
             "title": "Ripcamp",
             "description": "Conecta a estudiantes y exalumnos para resolver dudas técnicas. Desarrollada con React."
-        },
-          {
-            "image": "src/assets/images/proyectos/bricksbreaker.png",
-            "link": "https://bricks-breaker-pcgame.netlify.app",
-            "title": "Bricks Breaker",
-            "description": "Proyecto inspirado en el clásico Bricks Breaker, desarrollado desde cero utilizando HTML, CSS y JavaScript."
         }
+        
     ]

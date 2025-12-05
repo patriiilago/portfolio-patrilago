@@ -6,7 +6,7 @@ const Tech = () => {
     return (
         <section className="tech-section-container">
             
-            <h1 className="tech-title">Tech</h1>
+            <h1 className="tech-title">Tecnologías</h1>
 
             <div className="carousel-wrapper">
                 <div className="carousel-track">

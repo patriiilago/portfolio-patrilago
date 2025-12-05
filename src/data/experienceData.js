@@ -11,7 +11,7 @@ export const experiences = [
     ]
   },
   {
-    role: "Camarero de coctelería",
+    role: "Responsable de turno",
     company: "Tanti Junior Paradise",
     period: "sept. 2024 - jun. 2025",
     location: "Sliema, Malta",
@@ -27,9 +27,9 @@ export const experiences = [
     period: "nov. 2021 - ene. 2024",
     location: "Santiago de Compostela, España",
     tasks: [
-      "Gestión y control de inventario, reposición y análisis de ventas.",
-      "Incremento de ventas de cross-selling entre un 20-30%.",
-      "Formación de compañeros y presentación de buenas prácticas."
+      "Aprendizaje constante y trabajo en equipo en entornos dinámicos",
+      "Formación de compañeros y liderazgo en tareas operativas.",
+      "Implementación de estrategias basadas en datos para optimizar procesos."
     ]
   }
 ];

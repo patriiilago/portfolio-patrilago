@@ -33,7 +33,7 @@ const Hero = () => {
                 target="_blank" rel="noopener noreferrer"
                 className="cv-button"
             >
-                Ver CV
+                Visualizar CV
             </a>
 
         </div>

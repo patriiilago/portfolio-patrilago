@@ -44,7 +44,7 @@
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: scroll 40s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 @keyframes scroll {
@@ -67,7 +67,11 @@
 
 /* Estilos para móviles */
 @media (max-width: 767px) {
-    .tech-section-container{
-        max-width: 360px;
-    }
+  .tech-section-container {
+    max-width: 330px;
+  }
+
+  .tech-title {
+    font-size: 2rem;
+  }
 }
