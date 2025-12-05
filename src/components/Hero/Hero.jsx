@@ -1,5 +1,7 @@
 import './Hero.css'
 
+import iconGithub from "./../../../public/iconos/iconGithub.png"
+
 const Hero = () => {
 
     return (
@@ -15,7 +17,7 @@ const Hero = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <img src="./../../../public/iconos/iconGithub.png" alt="GitHub" />
+                    <img src={iconGithub} alt="GitHub" />
                 </a>
 
                 <a
