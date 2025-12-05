@@ -16,7 +16,7 @@
 }
 
 #home {
-    background-image: url("./../public/fondo/imagen-fondo.jpeg"); 
+    background-image: url("./assets/fondo/imagen-fondo.jpeg"); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

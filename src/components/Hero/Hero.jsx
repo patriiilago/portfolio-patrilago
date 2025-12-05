@@ -1,7 +1,8 @@
 import './Hero.css'
 
-import iconGithub from "./../../../public/iconos/iconGithub.png"
-import iconLinkedin from "./../../../public/iconos/iconLinkedin.png"
+import iconGithub from "./../../assets/iconos/iconGithub.png"
+import iconLinkedin from "./../../assets/iconos/iconLinkedin.png"
+import patriCv from "./../../../public/cv/Patri-Lago-CV.pdf"
 
 const Hero = () => {
 
@@ -33,7 +34,7 @@ const Hero = () => {
             </div>
 
             <a 
-                href="./../../../public/cv\Patri-Lago-CV.pdf"
+                href={patriCv}
                 target="_blank" rel="noopener noreferrer"
                 className="cv-button"
             >
