@@ -1,6 +1,6 @@
 import './Projects.css'
-import projectsData from '../../data/projectsData.json'
 import ProjectCard from '../ProjectCard/ProjectCard'
+import projectsData from './../../data/projectsData';
 
 const Projects = () => {
 
