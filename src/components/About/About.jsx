@@ -1,6 +1,6 @@
 import './About.css'
 
-import fotoPerfil from "./../../../public/foto-perfil/foto-perfil.jpg"
+import fotoPerfil from "./../../assets/foto-perfil/patri-foto.jpg"
 
 const About = () => {
 
