@@ -1,15 +1,3 @@
-/* Variables para facilitar la edición */
-:root {
-    --navbar-bg: rgba(51, 50, 50, 0.349);
-    --navbar-bg2: rgba(0, 0, 0, 0.8);
-    --nav-color-icon: #00EEFF;
-    --nav-color-text: #ecf0f1;
-    --border-radius: 10px;
-    --text-color-hover: #00EEFF;
-    --icon-color: #00EEFF;
-    --accent-color-primary: #00EEFF;
-}
-
 /* Contenedor principal de la barra de navegación */
 .navbar-container {
     display: flex;
@@ -31,7 +19,7 @@
     gap: 20px;
 
     /* Estilo del "contenedor" flotante oscuro */
-    background: var(--navbar-bg);
+    background: var(--navbar-wrap-bg);
     border-radius: var(--border-radius);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
@@ -47,14 +35,14 @@
     margin-left: 10px;
     margin: 16px;
     background: linear-gradient(90deg,
-            var(--icon-color),
-            var(--accent-color-primary));
+            var(--title-color-grad-start),
+            var(--title-color-accent-primary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .navbar-subtitle {
-    color: var(--nav-color-text);
+    color: var(--navbar-name-text-color);
     margin: 5px;
 }
 
@@ -71,7 +59,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: var(--nav-color-text);
+    color: var(--text-color);
     padding: 12px 13px;
     font-size: 16px;
     font-weight: bold;
@@ -80,7 +68,7 @@
 }
 
 .nav-link:hover {
-    color: var(--nav-color-icon);
+    color: var( --navbar-color-text-hover);
 }
 
 
@@ -96,7 +84,7 @@
 .bar {
     width: 25px;
     height: 3px;
-    background-color: var(--nav-color-text);
+    background-color: var(--text-color);
     margin: 5px 0;
     transition: 0.4s;
     border-radius: 2px;
@@ -172,7 +160,7 @@
         width: 100vw;
         /* Ocupa el 100% del viewport width */
 
-        background: var(--navbar-bg2);
+        background: var(--navbar-mobile-menu-bg);
         /* Ajustamos el border radius para que parezca que "cae" del wrap pequeño */
         border-radius: var(--border-radius);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);

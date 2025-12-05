@@ -7,7 +7,7 @@
 .section-title {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: var(--accent-color-primary);
+    color: var(--title-underline-color);
 }
 
 .experience-list {
@@ -19,7 +19,7 @@
 .experience-card {
     background-color: rgba(255, 255, 255, 0.05);
     padding: 1.5rem;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -36,7 +36,7 @@
 
 .experience-company {
     font-size: 1.2rem;
-    color: var(--icon-color);
+    color: var(--experience-company-color);
     margin-bottom: 0.3rem;
 }
 

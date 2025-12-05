@@ -1,5 +1,5 @@
 import './Tech.css'
-import { ICONS } from "../../data/iconsData.js";
+import { ICONS } from "../../data/techData.js";
 
 const Tech = () => {
 
@@ -11,7 +11,7 @@ const Tech = () => {
             <div className="carousel-wrapper">
                 <div className="carousel-track">
                     {ICONS.concat(ICONS).map((icon, index) => (
-                        <div key={icon.name} className="icon-card">
+                        <div key={`${icon.name}-${index}`} className="icon-card">
                             <div
                                 className="icon-svg"
                                 dangerouslySetInnerHTML={{ __html: icon.svgPath }}

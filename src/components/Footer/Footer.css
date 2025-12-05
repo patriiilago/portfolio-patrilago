@@ -1,20 +1,8 @@
-:root {
-    --button-bg-color: #00FFFF;
-    --accent-color: #c9565642;
-    --text-color: #ecf0f1;
-    --text-color-copyright: #bdc3c7;
-    --icon-color: #00FFFF;
-    --accent-color-primary: #e45c5c;
-    --accent-color-light: #c956566e;
-    --text-color-role: #71AFAF;
-}
-
-
 footer {
-    background-color: var(--accent-color);
+    background-color: var(--footer-bg--color);
     color: var(--text-color);
     padding: 40px 20px 20px;
-    border-top: 5px solid var(--accent-color-light);
+    border-top: 5px solid var(--footer-border-color);
 }
 
 .footer-container {
@@ -31,8 +19,8 @@ footer {
 
 .footer-info h1 {
     background: linear-gradient(90deg,
-            var(--icon-color),
-            var(--accent-color-primary)40%);
+            var(--title-color-grad-start),
+            var(--title-color-accent-primary)40%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -44,7 +32,7 @@ footer {
     font-style: italic;
     margin-top: 0;
     margin-bottom: 15px;
-    color: var(--text-color-role);
+    color: var(--footer-role-text-color);
 }
 
 .about-me {
@@ -68,7 +56,7 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--accent-color-light);
+    color: var(--footer-color-text-hover);
 }
 
 /* Estilos de enlaces sociales */
@@ -82,9 +70,9 @@ footer a:hover {
     text-align: center;
     margin-top: 30px;
     padding-top: 15px;
-    border-top: 1px solid var(--accent-color-light);
+    border-top: 1px solid var(--footer-border-color);
     font-size: 0.85em;
-    color: var(--text-color-copyright);
+    color: var(--footer-text-color-copyright);
 }
 
 
@@ -100,12 +88,6 @@ footer a:hover {
     }
 
     .footer-info h1 {
-        background: linear-gradient(90deg,
-                var(--icon-color),
-                var(--accent-color-primary)70%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
         margin-bottom: 5px;
     }
 

@@ -1,14 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600;700&display=swap');
 
-html, body, #root {
+/* Variables para facilitar la edición */
+:root {
+    --text-color: #ecf0f1;
+    --border-radius: 10px;
+
+    /* App */
+    --hero-overlay-color: rgba(0, 0, 0, 0.45);
+
+    /* Títulos */
+    --title-underline-color: #e45c5c;
+
+    /* Título gradient*/
+    --title-color-grad-start: #00EEFF;
+    --title-color-accent-primary: #e45c5c;
+
+    /* Navbar */
+    --navbar-name-text-color: #bdc3c7;
+    --navbar-color-text-hover: #00EEFF;
+    --navbar-wrap-bg: rgba(51, 50, 50, 0.349);
+    --navbar-mobile-menu-bg: rgba(0, 0, 0, 0.8);
+    --border-radius: 10px;
+
+    /* Hero */
+    --hero-buttonCv-bg-color: #00FFFF;
+
+    /* Experience */
+    --experience-company-color: #00EEFF;
+
+    /* About */
+    --about-highlight-color: #e45c5c;
+
+    /* Contact */
+    --contact-input-bg-color: #ecf0f1;
+    --contact-button-color-grad-start: #00EEFF;
+    --contact-button-accent-color-primary: #e45c5c;
+
+    /* Footer */
+    --footer-bg--color: #c9565642;
+    --footer-role-text-color: #71AFAF;
+    --footer-color-text-hover: #c956566e;
+    --footer-border-color: #c956566e;
+    --footer-text-color-copyright: #bdc3c7;
+}
+
+
+html,
+body,
+#root {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 
     width: 100%;
 
     font-family: 'Raleway', sans-serif;
     background-color: #0D0102;
 }
-

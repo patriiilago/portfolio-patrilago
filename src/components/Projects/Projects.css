@@ -22,7 +22,7 @@
     width: 20%; 
     height: 4px; 
     
-    background-color: var(--accent-color-primary); 
+    background-color: var(--title-underline-color); 
     
     transform: translateX(-50%); 
 }

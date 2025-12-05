@@ -1,12 +1,8 @@
-:root {
-    --color-text-faded: #ecf0f1;
-}
-
 .project-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 12px;
+    border-radius: var(--border-radius);
     overflow: hidden;
     transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
@@ -66,7 +62,7 @@
 
 .description {
     margin-bottom: 0; 
-    color: var(--color-text-faded);
+    color: var(--text-color);
     font-size: 0.95rem;
     line-height: 1.4;
 }
