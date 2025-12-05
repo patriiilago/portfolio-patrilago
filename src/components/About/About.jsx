@@ -11,7 +11,7 @@ const About = () => {
 
                 <div className="about-me-image-wrapper">
                     <img
-                        src="src/assets/images/foto-perfil/patri-foto.jpg"
+                        src="./../../../public/foto-perfil/patri-foto.jpg"
                         alt="Foto de perfil de la desarrolladora"
                         className="profile-photo"
                     />

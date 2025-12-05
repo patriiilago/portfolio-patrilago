@@ -15,7 +15,7 @@ const Hero = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <img src="src\assets\iconos\iconGithub.png" alt="GitHub" />
+                    <img src="./../../../public/iconos/iconGithub.png" alt="GitHub" />
                 </a>
 
                 <a
@@ -24,12 +24,13 @@ const Hero = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <img src="src\assets\iconos\iconLinkedin.png" alt="Linkedin" />
+                    
+                    <img src="./../../../public/iconos/iconLinkedin.png"alt="Linkedin" />
                 </a>
             </div>
 
-            <a
-                href="public\cv\Patri-Lago-CV.pdf"
+            <a 
+                href="./../../../public/cv\Patri-Lago-CV.pdf"
                 target="_blank" rel="noopener noreferrer"
                 className="cv-button"
             >
