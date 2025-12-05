@@ -1,6 +1,7 @@
 import './Hero.css'
 
 import iconGithub from "./../../../public/iconos/iconGithub.png"
+import iconLinkedin from "./../../../public/iconos/iconLinkedin.png"
 
 const Hero = () => {
 
@@ -27,7 +28,7 @@ const Hero = () => {
                     rel="noopener noreferrer"
                 >
                     
-                    <img src="./../../../public/iconos/iconLinkedin.png"alt="Linkedin" />
+                    <img src={iconLinkedin} alt="Linkedin" />
                 </a>
             </div>
 

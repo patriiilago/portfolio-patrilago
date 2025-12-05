@@ -1,5 +1,7 @@
 import './About.css'
 
+import fotoPerfil from "./../../images/foto-perfil.jpg"
+
 const About = () => {
 
     return (
@@ -11,7 +13,7 @@ const About = () => {
 
                 <div className="about-me-image-wrapper">
                     <img
-                        src="./../../../public/foto-perfil/patri-foto.jpg"
+                        src={fotoPerfil}
                         alt="Foto de perfil de la desarrolladora"
                         className="profile-photo"
                     />
