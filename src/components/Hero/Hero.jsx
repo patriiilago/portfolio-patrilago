@@ -7,10 +7,13 @@ import patriCv from "./../../assets/cv/patri-lago-CV.pdf"
 const Hero = () => {
 
     return (
+        <section className="home-content">
 
-        <div className="home-content">
-            <h1 className="name-title">Patri Lago</h1>
-            <h2 className="role-title">Software Developer</h2>
+            <div className="container-title">
+                <h1 className="name-title">Patri Lago</h1>
+                <h2 className="role-title">Software Developer</h2>
+            </div>
+
 
             <div className="home-social">
                 <a
@@ -28,20 +31,22 @@ const Hero = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    
+
                     <img src={iconLinkedin} alt="Linkedin" />
                 </a>
             </div>
 
-            <a 
-                href={patriCv}
-                target="_blank" rel="noopener noreferrer"
-                className="cv-button"
-            >
-                Visualizar CV
-            </a>
+            <div className="home-button-container">
+                <a
+                    href={patriCv}
+                    target="_blank" rel="noopener noreferrer"
+                    className="cv-button"
+                >
+                    Visualizar CV
+                </a>
 
-        </div>
+            </div>
+        </section>
     )
 
 }

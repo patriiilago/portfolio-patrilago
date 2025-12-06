@@ -16,14 +16,14 @@
 }
 
 #home {
-    background-image: url("./assets/fondo/imagen-fondo.jpeg"); 
+    background-image: url("./assets/fondo/imagen-fondo.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
     z-index: 1;
 
-    height: 58rem;
+    height: 57rem;
 
     display: flex;
     flex-direction: column;
@@ -47,16 +47,15 @@ section h1 {
     text-align: center;
     font-size: 2.5rem;
     color: var(--text-color);
-    padding-top: 6rem;
+    padding-top: 3rem;
 }
 
 @media (max-width: 768px) {
 
     #home {
-        height: 10rem;
-         min-height: 90vh;
+        height: 12rem;
+        min-height: 100vh;
         background-attachment: scroll;
-        padding: 2rem 1rem;
     }
 
     .portfolio-main {
