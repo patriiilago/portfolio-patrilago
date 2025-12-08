@@ -1,7 +1,6 @@
 /* Compensa la altura de la navbar fija */
 .scroll-offset {
     scroll-margin-top: 120px;
-    /* cambia según tu navbar */
 }
 
 /* ==== BLOQUE RAÍZ ==== */
