@@ -1,3 +1,9 @@
+/* Compensa la altura de la navbar fija */
+.scroll-offset {
+    scroll-margin-top: 120px;
+    /* cambia según tu navbar */
+}
+
 /* ==== BLOQUE RAÍZ ==== */
 .portfolio {
     color: var(--text-color);
@@ -12,7 +18,7 @@
 .portfolio__main {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 6.5rem;
 }
 
 /* ==== SECCIONES ==== */
@@ -51,7 +57,7 @@
 
 /* --- CONTACT (modifier) --- */
 .portfolio__section--contact {
-    margin-bottom: 6.25rem;
+    margin-bottom: 6rem;
 }
 
 /* ==== TITULOS DE SECCIÓN (GLOBAL) ==== */
@@ -61,8 +67,6 @@
 
     display: inline-block;
     position: relative;
-    
-    padding-top: 6rem;
 }
 
 /* Línea inferior */
@@ -74,7 +78,7 @@
 
     width: 35%;
     height: 4px;
-    
+
     background-color: var(--title-underline-color);
     border-radius: 10px;
 }
@@ -83,6 +87,10 @@
 /* ==== RESPONSIVE ==== */
 @media (max-width: 768px) {
 
+    .scroll-offset {
+        scroll-margin-top: 40px;
+    }
+
     .portfolio__section--home {
         height: 12rem;
         min-height: 100vh;
@@ -90,12 +98,12 @@
     }
 
     .portfolio__main {
-        gap: 0rem;
+        gap: 2rem;
     }
 
-    .section-title {
+    /* .section-title {
     padding-top: 2.5rem;
-}
+} */
 
     .portfolio__section--contact {
         margin-bottom: 10rem;

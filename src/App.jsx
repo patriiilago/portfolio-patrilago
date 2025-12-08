@@ -23,23 +23,23 @@ function App() {
             <Hero />
           </section>
 
-          <section id="experience" className="portfolio__section portfolio__section--experience">
+          <section id="experience" className="portfolio__section portfolio__section--experience  scroll-offset">
             <Experience />
           </section>
 
-          <section id="tech" className="portfolio__section portfolio__section--tech">
+          <section id="tech" className="portfolio__section portfolio__section--tech scroll-offset">
             <Tech />
           </section>
 
-          <section id="projects" className="portfolio__section portfolio__section--projects">
+          <section id="projects" className="portfolio__section portfolio__section--projects scroll-offset">
             <Projects />
           </section>
 
-          <section id="about" className="portfolio__section portfolio__section--about">
+          <section id="about" className="portfolio__section portfolio__section--about scroll-offset">
             <About />
           </section>
 
-          <section id="contact" className="portfolio__section portfolio__section--contact">
+          <section id="contact" className="portfolio__section portfolio__section--contact scroll-offset">
             <Contact />
           </section>
 
