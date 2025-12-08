@@ -1,39 +1,28 @@
-.tech-section-container {
+/* =============================
+   TECH (BLOCK)
+============================= */
+
+.tech {
   max-width: 700px;
   text-align: center;
   margin: 0 auto;
 }
 
-.tech-title {
-  font-size: 2.5rem;
-  color: var(--text-color);
-  margin-bottom: 50px;
+/* Título propio del bloque (si necesitas ajustes específicos) */
+.tech__title {
+  margin-bottom: 4.5rem;
+} 
 
-  position: relative;
-  display: inline-block;
-}
+/* =============================
+   CAROUSEL WRAPPER
+============================= */
 
-/* ... (Estilos de la línea) ... */
-.tech-title::after {
-  content: '';
-  position: absolute;
-  left: 17%;
-  bottom: -5px;
-
-  width: 30%;
-  height: 4px;
-
-  background-color: var(--title-underline-color);
-
-  transform: translateX(-50%);
-}
-
-.carousel-wrapper {
+.tech__carousel-wrapper {
   overflow: hidden;
   width: 100%;
 }
 
-.carousel-track {
+.tech__carousel-track {
   display: flex;
   gap: 20px;
   width: max-content;
@@ -50,21 +39,41 @@
   }
 }
 
-.icon-card {
+/* =============================
+   ICON CARD
+============================= */
+
+.tech__icon-card {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* SVG */
+.tech__icon-svg svg {
+  width: 50px;
+  height: 50px;
+  fill: var(--text-color);
+}
 
-/* Estilos para móviles */
+/* Nombre del icono */
+.tech__icon-name {
+  margin-top: 0.5rem;
+  color: var(--text-color);
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+
 @media (max-width: 767px) {
-  .tech-section-container {
+  
+  .tech {
     max-width: 330px;
   }
 
-  .tech-title {
-    font-size: 2rem;
+  .tech__title {
+    margin-bottom: 4rem;
   }
 }

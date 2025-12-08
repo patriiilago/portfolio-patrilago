@@ -1,21 +1,27 @@
-.portfolio-container {
-    display: flex;
-    flex-direction: column;
-
+/* ==== BLOQUE RAÍZ ==== */
+.portfolio {
     color: var(--text-color);
 }
 
-.portfolio-main {
+/* === Estructura principal === */
+.portfolio__container {
     display: flex;
     flex-direction: column;
-    gap: 4.5rem;
 }
 
-#contact {
-    margin-bottom: 6.25rem;
+.portfolio__main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-#home {
+/* ==== SECCIONES ==== */
+.portfolio__section {
+    width: 100%;
+}
+
+/* --- HOME (modifier) --- */
+.portfolio__section--home {
     background-image: url("./assets/fondo/imagen-fondo.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,7 +29,7 @@
     position: relative;
     z-index: 1;
 
-    height: 57rem;
+    height: 58rem;
 
     display: flex;
     flex-direction: column;
@@ -31,8 +37,8 @@
     align-items: center;
 }
 
-/* 2. Creamos el overlay oscuro solo para HomeSection (para que el texto resalte) */
-#home::before {
+/* Overlay solo para HOME */
+.portfolio__section--home::before {
     content: "";
     position: absolute;
     top: 0;
@@ -43,26 +49,55 @@
     z-index: -1;
 }
 
-section h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: var(--text-color);
-    padding-top: 3rem;
+/* --- CONTACT (modifier) --- */
+.portfolio__section--contact {
+    margin-bottom: 6.25rem;
 }
 
+/* ==== TITULOS DE SECCIÓN (GLOBAL) ==== */
+.section-title {
+    font-size: 2.5rem;
+    color: var(--text-color);
+
+    display: inline-block;
+    position: relative;
+    
+    padding-top: 6rem;
+}
+
+/* Línea inferior */
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 35%;
+    height: 4px;
+    
+    background-color: var(--title-underline-color);
+    border-radius: 10px;
+}
+
+
+/* ==== RESPONSIVE ==== */
 @media (max-width: 768px) {
 
-    #home {
+    .portfolio__section--home {
         height: 12rem;
         min-height: 100vh;
         background-attachment: scroll;
     }
 
-    .portfolio-main {
-        gap: 2.5rem;
+    .portfolio__main {
+        gap: 0rem;
     }
 
-    #contact {
+    .section-title {
+    padding-top: 2.5rem;
+}
+
+    .portfolio__section--contact {
         margin-bottom: 10rem;
     }
 }

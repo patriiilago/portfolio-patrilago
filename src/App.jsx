@@ -12,43 +12,43 @@ function App() {
 
 
   return (
-    <>
-      <div className="portfolio-container">
+    <div className="portfolio">
+      <div className="portfolio__container">
         <Navbar />
 
 
-        <main className="portfolio-main">
+        <main className="portfolio__main">
 
-          <section id="home">
+          <section id="home" className="portfolio__section portfolio__section--home">
             <Hero />
           </section>
 
-          <section id="experience">
+          <section id="experience" className="portfolio__section portfolio__section--experience">
             <Experience />
           </section>
-          
-          <section id="tech">
+
+          <section id="tech" className="portfolio__section portfolio__section--tech">
             <Tech />
           </section>
 
-          <section id="projects">
+          <section id="projects" className="portfolio__section portfolio__section--projects">
             <Projects />
           </section>
 
-          <section id="about">
+          <section id="about" className="portfolio__section portfolio__section--about">
             <About />
           </section>
 
-          <section id="contact">
+          <section id="contact" className="portfolio__section portfolio__section--contact">
             <Contact />
-          </section> 
+          </section>
 
         </main>
 
 
         <Footer />
       </div>
-    </>
+    </div>
   )
 }
 

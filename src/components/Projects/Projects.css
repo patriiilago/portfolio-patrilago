@@ -1,33 +1,21 @@
-.projects-container {
+/* =============================
+   PROJECTS (BLOCK)
+============================= */
+
+.projects {
     max-width: 1100px;
     text-align: center;
     margin: 0 auto;
 }
 
-.section-title-projects {
-    font-size: 2.5rem;
-    color: var(--text-color);
-
-    position: relative;
-    display: inline-block;
+.projects__title{
 }
 
-/* ... (Estilos de la línea) ... */
-.section-title-projects::after {
-    content: ''; 
-    position: absolute;
-    left: 10%;
-    bottom: -5px;
-    
-    width: 20%; 
-    height: 4px; 
-    
-    background-color: var(--title-underline-color); 
-    
-    transform: translateX(-50%); 
-}
+/* =============================
+   LISTA DE PROYECTOS
+============================= */
 
-.projects-list {
+.projects__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
@@ -35,22 +23,25 @@
     margin: 40px auto;
 }
 
-/* Estilos para móviles */
-@media (max-width: 767px) {
+/* =============================
+   RESPONSIVE
+============================= */
 
-    .projects-container {
+/* Móviles */
+@media (max-width: 767px) {
+    .projects {
         max-width: 280px;
     }
 
-    .projects-list {
+    .projects__list {
         grid-template-columns: 1fr;
         padding: 0 15px;
     }
 }
 
-/* Estilos para tablet */
+/* Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .projects-container{
+    .projects {
         max-width: 700px;
     }
 }

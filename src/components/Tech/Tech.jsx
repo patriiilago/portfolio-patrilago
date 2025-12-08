@@ -4,25 +4,30 @@ import { ICONS } from "../../data/techData.js";
 const Tech = () => {
 
     return (
-        <section className="tech-section-container">
-            
-            <h1 className="tech-title">Tecnologías</h1>
+        <div className="tech">
 
-            <div className="carousel-wrapper">
-                <div className="carousel-track">
+            {/* Título global + específico del bloque */}
+            <h1 className="section-title tech__title">Tecnologías</h1>
+
+            <div className="tech__carousel-wrapper">
+                <div className="tech__carousel-track">
                     {ICONS.concat(ICONS).map((icon, index) => (
-                        <div key={`${icon.name}-${index}`} className="icon-card">
+                        <div key={`${icon.name}-${index}`} className="tech__icon-card">
+
                             <div
-                                className="icon-svg"
+                                className="tech__icon-svg"
                                 dangerouslySetInnerHTML={{ __html: icon.svgPath }}
                             />
-                            <p>{icon.name}</p>
+
+                            <p className="tech__icon-name">{icon.name}</p>
+
                         </div>
                     ))}
                 </div>
             </div>
-        </section>
-    )
 
+        </div>
+    )
 }
+
 export default Tech

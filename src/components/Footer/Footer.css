@@ -1,33 +1,46 @@
-footer {
+/* =============================
+   FOOTER (BLOCK)
+============================= */
+
+.footer {
     background-color: var(--footer-bg--color);
     color: var(--text-color);
     padding: 40px 20px 20px;
     border-top: 5px solid var(--footer-border-color);
 }
 
-.footer-container {
+.footer__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
-.footer-info {
+.footer__section {
+    margin-bottom: 20px;
+}
+
+/* =============================
+   INFO PERSONAL
+============================= */
+
+.footer__info {
     max-width: 300px;
 }
 
-.footer-info h1 {
-    background: linear-gradient(90deg,
-            var(--title-color-grad-start),
-            var(--title-color-accent-primary)40%);
+.footer__name {
+    background: linear-gradient(
+        90deg,
+        var(--title-color-grad-start),
+        var(--title-color-accent-primary) 40%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     margin-bottom: 5px;
 }
 
-.role {
+.footer__role {
     font-size: 0.9em;
     font-style: italic;
     margin-top: 0;
@@ -35,38 +48,43 @@ footer {
     color: var(--footer-role-text-color);
 }
 
-.about-me {
+.footer__about {
     font-size: 0.9em;
 }
 
+/* =============================
+   NAVEGACIÓN Y REDES
+============================= */
 
-/* Estilos de la lista de navegación*/
-.nav-links ul {
+.footer__nav-list {
     list-style: none;
     padding: 0;
     display: flex;
     gap: 25px;
+    justify-content: flex-start;
 }
 
-/* Estilos de enlaces (navegación y sociales) */
-footer a {
+.footer__social-links {
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.footer__container a {
     color: #ecf0f1;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-footer a:hover {
+.footer__container a:hover {
     color: var(--footer-color-text-hover);
 }
 
-/* Estilos de enlaces sociales */
-.social-links {
-    display: flex;
-    gap: 25px;
-}
+/* =============================
+   COPYRIGHT
+============================= */
 
-/* Estilos de la parte inferior (copyright) */
-.footer-bottom {
+.footer__bottom {
     text-align: center;
     margin-top: 30px;
     padding-top: 15px;
@@ -75,35 +93,29 @@ footer a:hover {
     color: var(--footer-text-color-copyright);
 }
 
+/* =============================
+   RESPONSIVE
+============================= */
 
-/* Media Query para responsividad (en móviles, las secciones se apilan) */
 @media (max-width: 768px) {
-    .footer-container {
+    .footer__container {
         flex-direction: column;
         text-align: center;
     }
 
-    .footer-info {
+    .footer__info {
         max-width: 400px;
+        margin: 0 auto;
     }
 
-    .footer-info h1 {
-        margin-bottom: 5px;
-    }
-
-    .social-links,
-    .nav-links ul {
+    .footer__social-links,
+    .footer__nav-list {
         justify-content: center;
-    }
-
-    .footer-section {
-        margin-bottom: 20px;
     }
 }
 
-/* Estilos para tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .footer-container {
+    .footer__container {
         max-width: 700px;
     }
 }

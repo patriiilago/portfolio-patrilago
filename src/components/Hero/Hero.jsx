@@ -7,18 +7,17 @@ import patriCv from "./../../assets/cv/patri-lago-CV.pdf"
 const Hero = () => {
 
     return (
-        <section className="home-content">
+        <header className="hero">
 
-            <div className="container-title">
-                <h1 className="name-title">Patri Lago</h1>
-                <h2 className="role-title">Software Developer</h2>
+            <div className="hero__title-container">
+                <h2 className="hero__name">Patri Lago</h2>
+                <h2 className="hero__role">Software Developer</h2>
             </div>
 
-
-            <div className="home-social">
+            <nav className="hero__social">
                 <a
                     href="https://github.com/patriiilago"
-                    className="home-social-icon"
+                    className="hero__social-link"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -27,27 +26,26 @@ const Hero = () => {
 
                 <a
                     href="https://www.linkedin.com/in/patri-lago/"
-                    className="home-social-icon"
+                    className="hero__social-link"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-
-                    <img src={iconLinkedin} alt="Linkedin" />
+                    <img src={iconLinkedin} alt="LinkedIn" />
                 </a>
-            </div>
+            </nav>
 
-            <div className="home-button-container">
+            <div className="hero__button-wrapper">
                 <a
                     href={patriCv}
-                    target="_blank" rel="noopener noreferrer"
-                    className="cv-button"
+                    className="hero__cv-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     Visualizar CV
                 </a>
-
             </div>
-        </section>
-    )
 
+        </header>
+    )
 }
 export default Hero

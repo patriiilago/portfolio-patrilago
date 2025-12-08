@@ -3,27 +3,28 @@ import React from 'react';
 import './ProjectCard.css';
 
 const ProjectCard = ({ project }) => {
-   
-    const { image, link, title, description} = project 
-    
+    const { image, link, title, description } = project;
+
     return (
         <article className="project-card">
-      
-            <div className="card-image-container">
-            
-                <a href={link} target="_blank" rel="noopener noreferrer" className="btn btn-live">
-                
-                <img src={image} alt={`Captura de ${title}`} className="project-image" />
+
+            {/* Imagen del proyecto */}
+            <div className="project-card__image-container">
+                <a href={link} target="_blank" rel="noopener noreferrer" className="project-card__btn-live">
+                    <img
+                        src={image}
+                        alt={`Captura de ${title}`}
+                        className="project-card__image"
+                    />
                 </a>
-
             </div>
 
-            <div className="card-content">
-                <h3>{title}</h3>
-                
-                <p className="description">{description}</p>
-                
+            {/* Contenido del proyecto */}
+            <div className="project-card__content">
+                <h3 className="project-card__title">{title}</h3>
+                <p className="project-card__description">{description}</p>
             </div>
+
         </article>
     );
 };

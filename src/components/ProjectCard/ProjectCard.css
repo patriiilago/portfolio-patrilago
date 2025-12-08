@@ -1,3 +1,7 @@
+/* =============================
+   PROJECT CARD (BLOCK)
+============================= */
+
 .project-card {
     display: flex;
     flex-direction: column;
@@ -11,58 +15,82 @@
     transform: translateY(-5px);
 }
 
+/* =============================
+   IMAGE
+============================= */
 
-.card-image-container {
+.project-card__image-container {
     width: 90%;
     overflow: hidden;
     display: block;
     border-radius: 20px;
 }
 
-
-.btn-live {
+.project-card__btn-live {
     display: block;
     width: 100%;
     height: 100%;
 }
 
-.project-image {
+.project-card__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.4s ease, opacity 0.3s ease;
 }
 
-.project-card:hover .project-image {
+.project-card:hover .project-card__image {
     transform: scale(1.05);
     opacity: 0.9;
 }
 
+/* =============================
+   CONTENT
+============================= */
 
-.card-content {
+.project-card__content {
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-grow: 1; 
+    flex-grow: 1;
     color: var(--color-text-light);
 }
 
-.card-content h3 {
+.project-card__title {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 1.5rem;
     text-transform: uppercase;
+
     background: linear-gradient(90deg,
-            var(--icon-color) 0%,
-            var(--accent-color-primary) 90%);
+            var(--title-color-grad-start),
+            var(--title-color-accent-primary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.description {
-    margin-bottom: 0; 
+.project-card__description {
+    margin-bottom: 0;
     color: var(--text-color);
     font-size: 0.95rem;
     line-height: 1.4;
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+
+@media (max-width: 767px) {
+    .project-card__content {
+        padding: 15px;
+    }
+
+    .project-card__title {
+        font-size: 1.3rem;
+    }
+
+    .project-card__description {
+        font-size: 0.9rem;
+    }
 }

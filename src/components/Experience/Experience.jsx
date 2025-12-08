@@ -3,26 +3,33 @@ import { experiences } from '../../data/experienceData';
 
 const Experience = () => {
 
-return (
-<section className="experience-section">
-      <h1 
-      id="Experience" className="section-title">Experiencia</h1>
-      <div className="experience-list">
+  return (
+    <div className="experience">
+
+      {/* Título global + específico del bloque */}
+      <h1 className="section-title experience__title">Experiencia</h1>
+
+      <div className="experience__list">
         {experiences.map((exp, index) => (
-          <div key={index} className="experience-card">
-            <h3 className="experience-role">{exp.role}</h3>
-            <h4 className="experience-company">{exp.company}</h4>
-            <span className="experience-period">{exp.period}</span>
-            <span className="experience-location">{exp.location}</span>
-            <ul className="experience-tasks">
+          <article key={index} className="experience__card">
+
+            <h3 className="experience__role">{exp.role}</h3>
+            <h4 className="experience__company">{exp.company}</h4>
+
+            <span className="experience__period">{exp.period}</span>
+            <span className="experience__location">{exp.location}</span>
+
+            <ul className="experience__tasks">
               {exp.tasks.map((task, i) => (
-                <li key={i}>{task}</li>
+                <li key={i} className="experience__task">{task}</li>
               ))}
             </ul>
-          </div>
+
+          </article>
         ))}
       </div>
-    </section>
+
+    </div>
   );
 };
 export default Experience

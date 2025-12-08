@@ -1,4 +1,8 @@
-.home-content {
+/* ============================
+   HERO (BLOCK)
+============================ */
+
+.hero {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,80 +12,70 @@
     margin: 0 auto;
 }
 
-.name-title {
+/* ============================
+   TITLES
+============================ */
+
+.hero__name {
     font-size: 7.5rem;
-    padding: 0px;
-    margin: 0px;
-    margin-bottom: 0.2rem;
+    margin: 0 0 0.2rem 0;
 
     background: linear-gradient(90deg,
-            var(--title-color-grad-start),
-            var(--title-color-accent-primary));
+        var(--title-color-grad-start),
+        var(--title-color-accent-primary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     opacity: 0;
-
     animation: slide-up-in 1.0s ease-out 0.2s forwards;
 }
 
 
-.role-title {
+.hero__role {
     font-size: 3.5rem;
     font-weight: 600;
-    margin-top: 0;
-    margin-bottom: 2rem;
+    margin: 0 0 2rem 0;
 
     background: linear-gradient(90deg,
-            var(--title-color-grad-start) 0%,
-            var(--title-color-accent-primary) 60%);
+        var(--title-color-grad-start) 0%,
+        var(--title-color-accent-primary) 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-
     opacity: 0;
-
     animation: slide-up-in 1.0s ease-out 0.2s forwards;
 }
 
-/* Animación de aparición desde abajo */
-@keyframes slide-up-in {
-    from {
-        opacity: 0;
-        transform: translateY(60px);
-    }
+/* ============================
+   SOCIAL NAV
+============================ */
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.home-social {
+.hero__social {
     margin-bottom: 3rem;
     display: flex;
-    gap: 15px
+    gap: 15px;
 }
 
-.home-social-icon {
+.hero__social-link {
     display: inline-block;
+    transform: translateY(0);
     transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 
-.home-social-icon:hover {
+.hero__social-link:hover {
     transform: translateY(-5px);
 }
 
-.home-social-icon img {
+.hero__social-link img {
     width: 3rem;
     height: auto;
 }
 
-.home-button-container {
-    padding: 20px 0 0;
-}
+/* ============================
+   BUTTON CV
+============================ */
 
-.cv-button {
+.hero__cv-button {
     background-color: var(--hero-buttonCv-bg-color);
     color: #363038;
     text-decoration: none;
@@ -92,48 +86,62 @@
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+
+    display: inline-block;
+    transform: translateY(0);
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.cv-button:hover {
+.hero__cv-button:hover {
     transform: translateY(-2px);
 }
 
-/* Estilos para móviles */
+/* ============================
+   ANIMATIONS
+============================ */
+
+@keyframes slide-up-in {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+
 @media (max-width: 767px) {
 
-    .home-content {
+    .hero {
         max-width: 360px;
     }
 
-    .name-title {
+    .hero__name {
         font-size: 4rem;
         font-weight: 700;
-        text-align: center;
     }
 
-    .role-title {
+    .hero__role {
         font-size: 2.5rem;
         font-weight: 700;
-        margin: 0px;
-        white-space: normal;
+        margin: 0;
     }
 
-    .home-social {
+    .hero__social {
         margin-top: 1rem;
     }
 
-    .home-social-icon img {
+    .hero__social-link img {
         width: 2.5rem;
         margin: 0 0.5rem;
     }
 
-    .home-button-container {
-        padding: 20px 0 0;
-    }
-
-    .cv-button {
+    .hero__cv-button {
         padding: 0.9rem 1rem;
     }
-
 }

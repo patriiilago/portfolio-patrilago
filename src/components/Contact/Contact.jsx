@@ -1,61 +1,63 @@
 import './Contact.css'
 
-const Contact = () => {
 
+const Contact = () => {
     return (
-        <section className="contact-section-container">
-            <h1 className="contact-title">Contacto</h1>
+        <div className="contact">
+
+            {/* Título global */}
+            <h1 className="section-title contact__title">Contacto</h1>
 
             <form 
-            className="contact-form" 
-            action="https://formspree.io/f/mjkbkqbq" 
-            method="post"
+                className="contact__form" 
+                action="https://formspree.io/f/mjkbkqbq" 
+                method="post"
             >
 
-                <div className="form-group">
-                    <label htmlFor="name" className="form-label">
+                <div className="contact__form-group">
+                    <label htmlFor="name" className="contact__form-label">
                         Nombre
                     </label>
                     <input
                         type="text"
                         name="name"
                         id="name"
-                        className="form-input"
+                        className="contact__form-input"
                         required
                     />
                 </div>
 
-                <div className="form-group">
-                    <label htmlFor="email" className="form-label">
+                <div className="contact__form-group">
+                    <label htmlFor="email" className="contact__form-label">
                         Email
                     </label>
                     <input
-                        type="text"
+                        type="email"
                         name="email"
                         id="email"
-                        className="form-input"
+                        className="contact__form-input"
                         required
                     />
                 </div>
-                <div className="form-group">
-                    <label htmlFor="message" className="form-label">
+
+                <div className="contact__form-group">
+                    <label htmlFor="message" className="contact__form-label">
                         Comentario
                     </label>
                     <textarea
                         name="message"
                         id="message"
-                        className="form-textarea"
+                        className="contact__form-textarea"
                         required
                     ></textarea>
                 </div>
 
-                <button className="buttonContact">
+                <button type="submit" className="contact__button">
                     Enviar
                 </button>
 
             </form>
-        </section>
+        </div>
     )
-
 }
 export default Contact
