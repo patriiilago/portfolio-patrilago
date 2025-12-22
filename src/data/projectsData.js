@@ -1,6 +1,6 @@
 import miauyudaImage from './../assets/proyectos/miauyuda.png';
 import bricksBreakerImage from './../assets/proyectos/bricksbreaker.png';
-import ripcampImage from './../assets/proyectos/ripcamp.png';
+import ingeinaImage from './../assets/proyectos/ingeina.png';
 
 const projects = [
     {
@@ -19,11 +19,11 @@ const projects = [
     },
     
     {
-        "image": ripcampImage, 
+        "image": ingeinaImage, 
         "link": "https://ripcamp.netlify.app/",
-        "title": "Ripcamp",
+        "title": "Ingeina",
         "description": "Conecta a estudiantes y exalumnos para resolver dudas técnicas. Desarrollada con React."
     }
-];
+];la 
 
 export default projects;
