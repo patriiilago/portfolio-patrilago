@@ -8,7 +8,7 @@ const projects = [
         "image": miauyudaImage, 
         "link": "https://miauyuda.netlify.app/",
         "title": "Miauyuda",
-        "description":"Plataforma que une a veterinarios y dueños de mascotas. Ofrece dos tipos de usuario, consultas inmediatas con IA y localización de profesionales mediante mapas."
+        "description":"Plataforma que une a veterinarios y dueños de mascotas. Ofrece dos tipos de usuario, consultas inmediatas con chatbot y localización de profesionales mediante mapas."
     },
 
     {
@@ -24,6 +24,6 @@ const projects = [
         "title": "Ingeina",
         "description": "Conecta a estudiantes y exalumnos para resolver dudas técnicas. Desarrollada con React."
     }
-];la 
+];
 
 export default projects;
