@@ -1,16 +1,61 @@
-# React + Vite
+# Mi Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es mi **portfolio personal**, una **Single Page Application (SPA)** construida con **React**, que muestra mis habilidades, proyectos y experiencia en desarrollo web.  
 
-Currently, two official plugins are available:
+El portfolio está estructurado en secciones para destacar **experiencia, tecnologías, proyectos, información sobre mí y contacto**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Tecnologías usadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- React Router
+- CSS3 / HTML5 (estilos modularizados por componente)
+- Diseño responsivo
+- Despliegue: Netlify con dominio personalizado
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Arquitectura de CSS
+
+La aplicación utiliza una arquitectura de **CSS modularizada por componente**, donde cada sección o componente tiene su propio archivo `.css`. Esto permite mantener los estilos organizados y escalables a medida que el proyecto crece.
+
+Características principales:
+
+- Uso de **BEM naming convention** para consistencia (`.component__element--modifier`) en todos los componentes.
+- **Media queries** para garantizar diseño responsivo en móviles, tablets y desktop (`@media`).
+- **Transiciones y efectos suaves** en botones, enlaces y elementos interactivos.
+- Uso de **variables CSS y gradientes** para mantener un estilo uniforme y moderno en toda la aplicación.
+- Componentes como menús, tarjetas de proyectos, secciones de contacto, etc., tienen estilos aislados para evitar conflictos globales.
+
+Esta estrategia permite **aislar estilos por componente**, facilitando mantenimiento, escalabilidad y consistencia visual en toda la SPA.
+
+---
+
+## Secciones de la SPA
+
+| Sección | Descripción |
+|---------|-------------|
+| `Home` | Sección Hero que me presenta |
+| `Experience` | Experiencia laboral y educativa |
+| `Tech` | Tecnologías y herramientas que manejo |
+| `Projects` | Proyectos destacados con descripción y links |
+| `About` | Información sobre mí y mi trayectoria |
+| `Contact` | Formulario de contacto y enlaces a redes sociales |
+| `Footer` | Footer con enlaces e información adicional |
+
+---
+
+## Despliegue
+
+**Live Demo:** [Mi Portfolio](https://patrilago.com)
+
+---
+
+## Notas
+
+- Esta es una **SPA frontend-only**, no incluye backend.  
+- Enfocada en **UI, diseño responsivo y navegación con scroll suave**.  
+- Construida como una **muestra personal para portfolio**.  
+
+---
