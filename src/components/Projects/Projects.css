@@ -1,47 +1,71 @@
 /* =============================
-   PROJECTS (BLOCK)
+   CONTENEDOR GENERAL
 ============================= */
-
 .projects {
     max-width: 1100px;
-    text-align: center;
     margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-.projects__title{
+.projects__title {
+  margin-bottom: 4.5rem;
+} 
+
+/* =============================
+   1. PROYECTO DESTACADO (ARRIBA)
+============================= */
+.projects__featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.projects__featured-card {
+    max-width: 350px;
+    width: 100%;
+}
+
+.projects__featured-card .project-card__title {
+    font-size: 1.5rem;
 }
 
 /* =============================
-   LISTA DE PROYECTOS
+   2. GRID INFERIOR (LOS 3 DE ABAJO)
 ============================= */
-
-.projects__list {
+.projects__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-
-    margin: 40px auto;
+    justify-content: center;
 }
 
 /* =============================
    RESPONSIVE
 ============================= */
-
-/* Móviles */
-@media (max-width: 767px) {
-    .projects {
-        max-width: 280px;
+/* --- TABLETS (Entre 768px y 1024px) --- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .projects__featured-card {
+        max-width: 60%; /* El destacado un poco más ancho en tablet */
     }
 
-    .projects__list {
-        grid-template-columns: 1fr;
-        padding: 0 15px;
+    .projects__grid {
+         margin: 0 auto;
+        max-width: 60%;
+        grid-template-columns: repeat(1, 1fr); 
     }
 }
 
-/* Tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .projects {
-        max-width: 700px;
+/* --- MÓVILES (Menos de 768px) --- */
+@media (max-width: 767px) {
+    
+    .projects__featured-card {
+        max-width: 100%;
+    }
+    
+    .projects__grid {
+        grid-template-columns: 1fr; 
     }
 }

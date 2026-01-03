@@ -1,21 +1,21 @@
-import miauyudaImage from './../assets/proyectos/miauyuda.png';
-import bricksBreakerImage from './../assets/proyectos/bricksbreaker.png';
-import ingeinaImage from './../assets/proyectos/ingeina.png';
+import miauyudaImage from './../assets/proyectos/miauyuda.png'
+import bricksBreakerImage from './../assets/proyectos/bricksbreaker.png'
+import ingeinaImage from './../assets/proyectos/ingeina.png'
+import lecturApp from './../assets/proyectos/lecturApp2.png'
 
 const projects = [
     {
-        // El valor de 'image' ahora es el path final y optimizado que genera React/el bundler
+        "image": lecturApp, 
+        "link": "https://lecturapp.netlify.app/",
+        "title": "LecturApp",
+        "description":"Explorador de libros inmersivo que utiliza la API de Open Library. Gestiona tus listas de lectura (pendientes y leídos) en una interfaz inspirada en una biblioteca mágica nocturna."
+    },
+
+    {
         "image": miauyudaImage, 
         "link": "https://miauyuda.netlify.app/",
         "title": "Miauyuda",
         "description":"Plataforma que une a veterinarios y dueños de mascotas. Ofrece dos tipos de usuario, consultas inmediatas con chatbot y localización de profesionales mediante mapas."
-    },
-
-    {
-        "image": bricksBreakerImage, 
-        "link": "https://bricks-breaker-pcgame.netlify.app",
-        "title": "Bricks Breaker",
-        "description": "Proyecto inspirado en el clásico Bricks Breaker, desarrollado desde cero utilizando HTML, CSS y JavaScript."
     },
     
     {
@@ -23,7 +23,14 @@ const projects = [
         "link": "https://ripcamp.netlify.app/",
         "title": "Ingeina",
         "description": "Conecta a estudiantes y exalumnos para resolver dudas técnicas. Desarrollada con React."
+    },
+
+    {
+        "image": bricksBreakerImage, 
+        "link": "https://bricks-breaker-pcgame.netlify.app",
+        "title": "Bricks Breaker",
+        "description": "Videojuego desarrollado bajo arquitectura Desktop-first. Lógica y físicas construidas desde cero con HTML, CSS y JavaScript para entorno de ordenador."
     }
-];
+]
 
 export default projects;
