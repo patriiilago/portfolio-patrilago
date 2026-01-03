@@ -1,7 +1,7 @@
 import miauyudaImage from './../assets/proyectos/miauyuda.png'
 import bricksBreakerImage from './../assets/proyectos/bricksbreaker.png'
 import ingeinaImage from './../assets/proyectos/ingeina.png'
-import lecturApp from './../assets/proyectos/lecturApp2.png'
+import lecturApp from './../assets/proyectos/lecturApp.png'
 
 const projects = [
     {
