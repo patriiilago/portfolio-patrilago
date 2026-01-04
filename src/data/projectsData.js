@@ -6,21 +6,21 @@ import lecturApp from './../assets/proyectos/lecturApp.png'
 const projects = [
     {
         "image": lecturApp, 
-        "link": "https://lecturapp.netlify.app/",
+        "link": "https://lecturapp.netlify.app",
         "title": "LecturApp",
         "description":"Explorador de libros inmersivo que utiliza la API de Open Library. Gestiona tus listas de lectura (pendientes y leídos) en una interfaz inspirada en una biblioteca mágica nocturna."
     },
 
     {
         "image": miauyudaImage, 
-        "link": "https://miauyuda.netlify.app/",
+        "link": "https://miauyuda.netlify.app",
         "title": "Miauyuda",
         "description":"Plataforma que une a veterinarios y dueños de mascotas. Ofrece dos tipos de usuario, consultas inmediatas con chatbot y localización de profesionales mediante mapas."
     },
     
     {
         "image": ingeinaImage, 
-        "link": "https://ripcamp.netlify.app/",
+        "link": "https://ingeina.netlify.app",
         "title": "Ingeina",
         "description": "Conecta a estudiantes y exalumnos para resolver dudas técnicas. Desarrollada con React."
     },
