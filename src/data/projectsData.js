@@ -13,7 +13,7 @@ const projects = [
 
     {
         "image": miauyudaImage, 
-        "link": "https://miauyuda.netlify.app",
+        "link": "https://miiauyuda.netlify.app/",
         "title": "Miauyuda",
         "description":"Plataforma que une a veterinarios y dueños de mascotas. Ofrece dos tipos de usuario, consultas inmediatas con chatbot y localización de profesionales mediante mapas."
     },
