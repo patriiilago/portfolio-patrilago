@@ -1,5 +1,16 @@
 export const experiences = [
   {
+    role: "Desarrolladora Web Junior (Prácticas)",
+    company: "Origami Soluciones",
+    period: "maz. 2026 - abr. 2026",
+    location: "Ourense, España",
+    tasks: [
+      "Rediseño e implementación de sitios web en WordPress, desde prototipado en Figma hasta desarrollo final.",
+      "Creación de páginas con Elementor y Astra, e integración de plugins como WooCommerce y YITH Request a Quote. ",
+      "Mejora de accesibilidad, usabilidad y rendimiento aplicando buenas prácticas de desarrollo."
+    ]
+  },
+  {
     role: "Responsable de tienda",
     company: "Froitas León",
     period: "jul. 2025 - ago. 2025",

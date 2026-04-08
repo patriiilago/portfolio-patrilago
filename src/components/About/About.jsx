@@ -22,11 +22,13 @@ const About = () => {
 
                 {/* Contenido de texto */}
                 <div className="about__text-content">
-                    <p>Mi nombre es <span className="highlight-color">Patri Lago</span> y soy desarrolladora frontend con una gran pasión por entender la lógica detrás del código y por transformar ideas en experiencias digitales claras, usables y bien construidas.</p>
+                    <p>Mi nombre es <span className="highlight-color">Patri Lago</span> y soy desarrolladora web junior con formación full stack, especializada en frontend con React. Me apasiona entender la lógica detrás del código y transformar ideas en experiencias digitales claras y usables.</p>
 
-                    <p>Después de graduarme del bootcamp de Desarrollo Web Fullstack en <span className="highlight-color">Ironhack</span>, tuve el honor de que mi proyecto final quedara segundo en el <span className="highlight-color">Hackshow</span>. Esta experiencia no solo reforzó mi confianza como desarrolladora, sino que también me recordó lo mucho que disfruto los retos y el aprendizaje continuo.</p>
+                    <p>Actualmente estoy realizando prácticas donde trabajo con <span className="highlight-color">WordPress</span> y <span className="highlight-color">Figma</span>, participando en el desarrollo y rediseño de páginas web reales.</p>
 
-                    <p>Antes de entrar en el mundo tech trabajé en ventas e inventario, desarrollando organización y capacidad de resolución de problemas. Ahora me especializo en frontend, ampliando conocimientos en backend, y me considero curiosa, responsable y con muchas ganas de aprender y aportar valor.</p>
+                    <p>Tras formarme en desarrollo web, participé junto a un equipo de tres personas en nuestro proyecto final, que fue reconocido entre los mejores en el <span className="highlight-color">Hackshow</span>. Esta experiencia reforzó mi motivación por seguir aprendiendo y enfrentando nuevos retos.</p>
+
+                    <p>Antes de entrar en el sector tecnológico trabajé en ventas e inventario, donde desarrollé organización y capacidad de resolución de problemas. Actualmente, mi foco está en ganar experiencia práctica como desarrolladora y seguir aprendiendo día a día en entornos reales.</p>
                 </div>
 
             </div>
