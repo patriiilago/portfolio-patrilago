@@ -5,10 +5,13 @@ export const experiences = [
     period: "maz. 2026 - abr. 2026",
     location: "Ourense, España",
     tasks: [
-      "Rediseño e implementación de sitios web en WordPress, desde prototipado en Figma hasta desarrollo final.",
-      "Creación de páginas con Elementor y Astra, e integración de plugins como WooCommerce y YITH Request a Quote. ",
-      "Mejora de accesibilidad, usabilidad y rendimiento aplicando buenas prácticas de desarrollo."
-    ]
+    "Rediseño y desarrollo de páginas web reales a partir de prototipos en Figma utilizando WordPress como CMS.",
+    "Implementación de diseños responsive mediante CSS y buenas prácticas de maquetación.",
+    "Desarrollo de páginas con Elementor y Astra, asegurando coherencia visual y experiencia de usuario.",
+    "Integración y personalización de plugins como WooCommerce y YITH Request a Quote.",
+    "Aplicación de mejoras básicas de accesibilidad y ajustes de interfaz para mejorar la usabilidad.",
+    "Realización de pequeñas personalizaciones en PHP dentro de WordPress para ampliar funcionalidades."
+  ]
   },
   {
     role: "Responsable de tienda",

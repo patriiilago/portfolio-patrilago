@@ -11,7 +11,7 @@ const Hero = () => {
 
             <div className="hero__title-container">
                 <h2 className="hero__name">Patri Lago</h2>
-                <h2 className="hero__role">Software Developer</h2>
+                <h2 className="hero__role">Frontend Developer</h2>
             </div>
 
             <nav className="hero__social">
