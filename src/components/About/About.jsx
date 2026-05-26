@@ -23,19 +23,15 @@ const About = () => {
                 {/* Contenido de texto */}
                 <div className="about__text-content">
                     <p>
-                        Mi nombre es <span className="highlight-color">Patri Lago</span> y soy desarrolladora web junior con formación full stack, especializada en frontend con React. Me apasiona la lógica del código y transformar ideas en experiencias digitales claras y funcionales.
+                        Desarrolladora web junior con formación full stack, con interés en <span className="highlight-color">frontend</span> y <span className="highlight-color">backend</span> y las ganas de construir productos digitales que funcionen bien y se sientan bien.
                     </p>
 
                     <p>
-                        Actualmente estoy realizando prácticas en desarrollo web, donde trabajo en el rediseño de páginas reales utilizando <span className="highlight-color">Figma</span>, <span className="highlight-color">CSS</span> y <span className="highlight-color">WordPress</span>.
+                        Acabo de finalizar unas prácticas donde desarrollé <span className="highlight-color">mymalamesa.com</span> de principio a fin, trabajando con <span className="highlight-color">Figma</span>, <span className="highlight-color">CSS</span> y <span className="highlight-color">WordPress</span> en un proyecto real con cliente real. Durante el bootcamp, el proyecto final de mi equipo quedó segundo en el <span className="highlight-color">Hackshow de Ironhack</span>.
                     </p>
 
                     <p>
-                        Durante mi formación, participé en un proyecto final en equipo que fue seleccionado para la fase final del <span className="highlight-color">Hackshow</span>, donde competimos junto a otros proyectos de la promoción y obtuvimos el segundo puesto.
-                    </p>
-
-                    <p>
-                        Anteriormente trabajé en ventas e inventario, desarrollando habilidades de organización, responsabilidad y resolución de problemas. Actualmente busco mi primera oportunidad profesional como desarrolladora web junior, con interés en seguir creciendo tanto en frontend como en backend.
+                        Busco mi primera oportunidad profesional donde seguir creciendo, aportar desde el primer día y aprender sin parar.
                     </p>
                 </div>
 

@@ -50,7 +50,7 @@ const Footer = () => {
 
             {/* Sección de Copyright */}
             <div className="footer__bottom">
-                <p>&copy; 2025 Patri Lago. Todos los derechos reservados.</p>
+                <p>&copy; 2026 Patri Lago. Todos los derechos reservados.</p>
             </div>
 
         </footer>
