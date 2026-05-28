@@ -23,15 +23,15 @@ const About = () => {
                 {/* Contenido de texto */}
                 <div className="about__text-content">
                     <p>
-                        Desarrolladora web junior con formación full stack, con interés en <span className="highlight-color">frontend</span> y <span className="highlight-color">backend</span> y las ganas de construir productos digitales que funcionen bien y se sientan bien.
+                        Me enganché al código la primera vez que vi cómo unas pocas líneas podían cambiarlo todo. Desde entonces no he parado.
                     </p>
 
                     <p>
-                        Acabo de finalizar unas prácticas donde desarrollé <span className="highlight-color">mymalamesa.com</span> de principio a fin, trabajando con <span className="highlight-color">Figma</span>, <span className="highlight-color">CSS</span> y <span className="highlight-color">WordPress</span> en un proyecto real con cliente real. Durante el bootcamp, el proyecto final de mi equipo quedó segundo en el <span className="highlight-color">Hackshow de Ironhack</span>.
+                        Disfruto el ciclo completo: pensar la arquitectura, construir la lógica, y conseguir que lo que se ve en pantalla tenga tanto peso como lo que ocurre por detrás. El <span className="highlight-color">frontend</span> y el <span className="highlight-color">backend</span> no son opciones para mí, son dos caras del mismo problema.
                     </p>
 
                     <p>
-                        Busco mi primera oportunidad profesional donde seguir creciendo, aportar desde el primer día y aprender sin parar.
+                        He desarrollado un <span className="highlight-color">e-commerce</span> de principio a fin para cliente real con <span className="highlight-color">WordPress</span>, <span className="highlight-color">PHP</span> y <span className="highlight-color">CSS</span>, y el proyecto final de mi equipo quedó segundo en el <span className="highlight-color">Hackshow de Ironhack</span>.
                     </p>
                 </div>
 

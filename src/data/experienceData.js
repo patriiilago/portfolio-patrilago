@@ -1,17 +1,19 @@
 export const experiences = [
   {
-    role: "Desarrolladora Web Junior (Prácticas)",
+    role: "Web Developer",
     company: "Origami Soluciones",
     period: "maz. 2026 - abr. 2026",
     location: "Ourense, España",
     tasks: [
-    "Rediseño y desarrollo de páginas web reales a partir de prototipos en Figma utilizando WordPress como CMS.",
-    "Implementación de diseños responsive mediante CSS y buenas prácticas de maquetación.",
-    "Desarrollo de páginas con Elementor y Astra, asegurando coherencia visual y experiencia de usuario.",
-    "Integración y personalización de plugins como WooCommerce y YITH Request a Quote.",
-    "Aplicación de mejoras básicas de accesibilidad y ajustes de interfaz para mejorar la usabilidad.",
-    "Realización de pequeñas personalizaciones en PHP dentro de WordPress para ampliar funcionalidades."
-  ]
+      {
+        title: "Proyecto 1 — Web e-commerce",
+        description: "Desarrollo completo de sitio web para cliente real con WordPress, HTML5, CSS3 y Elementor. Integración de WooCommerce y YITH Request a Quote para entorno e-commerce. Funcionalidades personalizadas en PHP con hooks de WordPress para lógica condicional según estado del presupuesto. Diseño responsive y adaptación cross-browser."
+      },
+      {
+        title: "Proyecto 2 — Web corporativa",
+        description: "Diseño de prototipo en Figma y desarrollo frontend con WordPress para cliente real, cubriendo desde la fase de diseño UX/UI hasta la implementación parcial."
+      }
+    ]
   },
   {
     role: "Responsable de tienda",

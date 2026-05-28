@@ -9,7 +9,7 @@ const Footer = () => {
                 {/* 1. Columna de Perfil / Branding */}
                 <div className="footer__section footer__info">
                     <h1 className="footer__name">Patri Lago</h1>
-                    <p className="footer__role">Full-Stack Developer</p>
+                    <p className="footer__role">Full Stack Developer</p>
                     <p className="footer__about">Creando soluciones digitales con pasión por el código limpio y la experiencia de usuario.</p>
                 </div>
 
