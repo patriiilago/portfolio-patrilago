@@ -2,7 +2,7 @@ import './Hero.css'
 
 import iconGithub from "./../../assets/iconos/iconGithub.png"
 import iconLinkedin from "./../../assets/iconos/iconLinkedin.png"
-import patriCv from "./../../assets/cv/PatriciaLago_CV.pdf"
+import patriCv from "./../../assets/cv/PatriciaLago_FullStack_CV.pdf"
 
 const Hero = () => {
 
